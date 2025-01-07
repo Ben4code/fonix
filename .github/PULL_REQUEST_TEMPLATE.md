@@ -4,7 +4,7 @@ _Insert a description to help other understand the reasoning behind these change
 
 ### JIRA Ticket Link
 
-https://moneypigeonjira.atlassian.net
+https://fonixjira.atlassian.net
 
 ## Changes
 
