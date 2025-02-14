@@ -1,6 +1,15 @@
 import Image from "next/image";
+import { User } from "@repo/types"
 
 export default function Home() {
+  const users: User[] = [
+    {
+      id: '1', 
+      name: 'John Doe',
+      email: 'john_doe.com'
+    }
+  ]
+console.log(users)
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
       {/* Welcome Section */}

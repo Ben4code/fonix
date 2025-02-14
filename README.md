@@ -2,7 +2,7 @@
 #### Exploring new dimensions of reality
 Project built with [Nextjs v15](https://nextjs.org/) and [Nestjs v10](https://www.nestjs.com/)
 
-![Architecture](fonix_project_architecture.png)
+![Architecture](fonix.png)
 
 ## Table of contents
 * [Overview](#overview)
