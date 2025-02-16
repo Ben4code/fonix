@@ -1,0 +1,14 @@
+services:
+  pg_database:
+    image: postgres:14.1-alpine
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=S3cret
+      - POSTGRES_USER=fonix_user
+      - POSTGRES_DB=fonix_db
+
+    # Enable this for local development:
+    volumes:
+      - ./docker-volume:/var/lib/postgresql/data

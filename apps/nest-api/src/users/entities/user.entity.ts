@@ -1,7 +1,22 @@
+import { RegistryDates } from 'src/common/embedded/registry-dates.embedded';
+import { Column, PrimaryGeneratedColumn } from 'typeorm';
+
 export class User {
+  @PrimaryGeneratedColumn()
   id: number;
+
+  @Column()
   name: string;
+
+  @Column({ unique: true })
   email: string;
-  phone: number;
+
+  @Column({ unique: true })
+  phone: string;
+
+  @Column()
   password: string;
+
+  @Column(() => RegistryDates, { prefix: false })
+  reRegistryDates: RegistryDates;
 }
