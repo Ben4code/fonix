@@ -1,20 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { dataSourceOptions } from '../../db/data-source';
 
 @Module({
-  imports: [
-    TypeOrmModule.forRoot({
-      database: 'fonix_db',
-      type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'fonix_user',
-      password: 'S3cret',
-      // username: process.env.POSTGRES_USER,
-      // password: process.env.POSTGRES_PASSWORD,
-      autoLoadEntities: true,
-    }),
-  ],
+  imports: [TypeOrmModule.forRoot(dataSourceOptions)],
   exports: [DatabaseModule],
 })
 export class DatabaseModule {}

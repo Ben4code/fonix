@@ -5,14 +5,18 @@ import { UsersModule } from './users/users.module';
 import { CommonModule } from './common/common.module';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from '@nestjs/config';
-import configuration from './config/configuration';
+import configurations from './config/configuration';
 
 @Module({
   imports: [
     UsersModule,
     CommonModule,
+    ConfigModule.forRoot({
+      isGlobal: true,
+      expandVariables: true,
+      load: [configurations],
+    }),
     DatabaseModule,
-    ConfigModule.forRoot({ load: [configuration] }),
   ],
   controllers: [AppController],
   providers: [AppService],

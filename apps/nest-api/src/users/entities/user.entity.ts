@@ -1,6 +1,7 @@
-import { RegistryDates } from 'src/common/embedded/registry-dates.embedded';
-import { Column, PrimaryGeneratedColumn } from 'typeorm';
+import { RegistTableDates } from 'src/common/table-fields/register-table-dates.field';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
+@Entity()
 export class User {
   @PrimaryGeneratedColumn()
   id: number;
@@ -17,6 +18,6 @@ export class User {
   @Column()
   password: string;
 
-  @Column(() => RegistryDates, { prefix: false })
-  reRegistryDates: RegistryDates;
+  @Column(() => RegistTableDates, { prefix: false })
+  registerTableDates: RegistTableDates;
 }
