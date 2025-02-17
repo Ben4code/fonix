@@ -32,6 +32,9 @@ export class UsersService {
       where: {
         id,
       },
+      relations: {
+        orders: true,
+      },
     });
 
     if (!user) {
