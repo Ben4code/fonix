@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.11">
+  <diagram name="Page-1" id="az8-w3LZhor6W05Fpbo9">
+    <mxGraphModel dx="1026" dy="1504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="30" width="610" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-3" value="NESTJS" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190" y="60" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-4" value="NEXTJS" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="610" y="65" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-6" value="- Microservice (Kafka, BullMQ)&lt;br&gt;- Long running task queue.&lt;div&gt;- Monorepo&lt;/div&gt;&lt;div&gt;- Drizzle/TypeORM/Prisma&lt;/div&gt;&lt;div&gt;- Load Testing (Artilery)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="200" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NOxo2Q9nLcDDMprUPd7T-7" target="NOxo2Q9nLcDDMprUPd7T-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NOxo2Q9nLcDDMprUPd7T-7" target="NOxo2Q9nLcDDMprUPd7T-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-7" value="Shared Types/Schema&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="95" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-11" value="Github Actions CI/CD&lt;div&gt;Docker Compose&lt;/div&gt;&lt;div&gt;Kubernetes/VPS/AWS&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="385" y="-30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NOxo2Q9nLcDDMprUPd7T-12" value="TurboRepo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="35" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
