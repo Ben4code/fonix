@@ -1,11 +1,6 @@
-import {
-  IsInt,
-  IsPositive,
-  ValidatorConstraintInterface,
-} from 'class-validator';
+import { IsPositiveInt } from '../decorators/is-positive-int.decorator';
 
 export class IdDto {
-  @IsInt()
-  @IsPositive()
+  @IsPositiveInt()
   id: number;
 }
