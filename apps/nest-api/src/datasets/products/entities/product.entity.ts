@@ -1,10 +1,12 @@
 import { RegistTableDates } from 'src/common/table-fields/register-table-dates.field';
 import { Category } from 'src/datasets/categories/entities/category.entity';
+import { OrderItem } from 'src/datasets/orders/entities/order-item.entity';
 import {
   Column,
   Entity,
   JoinTable,
   ManyToMany,
+  OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
@@ -26,6 +28,13 @@ export class Product {
   @JoinTable({ name: 'product_to_category' })
   categories: Category[];
 
+  @OneToMany(() => OrderItem, (item) => item.product)
+  items: OrderItem[];
+
   @Column(() => RegistTableDates, { prefix: false })
   registerTableDates: RegistTableDates;
+
+  get orders() {
+    return this.items.map((item) => item.order);
+  }
 }
