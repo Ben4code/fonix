@@ -1,5 +1,5 @@
 import { RegistTableDates } from 'src/common/table-fields/register-table-dates.field';
-import { Order } from 'src/orders/entities/order.entity';
+import { Order } from 'src/datasets/orders/entities/order.entity';
 // import { User } from 'src/users/entities/user.entity';
 import {
   Column,

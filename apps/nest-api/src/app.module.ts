@@ -1,13 +1,14 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UsersModule } from './users/users.module';
+import { UsersModule } from './datasets/users/users.module';
 import { CommonModule } from './common/common.module';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from '@nestjs/config';
-import { OrdersModule } from './orders/orders.module';
-import { PaymentsModule } from './payments/payments.module';
-import { CategoriesModule } from './categories/categories.module';
+import { OrdersModule } from './datasets/orders/orders.module';
+import { PaymentsModule } from './datasets/payments/payments.module';
+import { CategoriesModule } from './datasets/categories/categories.module';
+import { ProductsModule } from './datasets/products/products.module';
 import configurations from './config/configuration';
 
 @Module({
@@ -23,6 +24,7 @@ import configurations from './config/configuration';
     OrdersModule,
     PaymentsModule,
     CategoriesModule,
+    ProductsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

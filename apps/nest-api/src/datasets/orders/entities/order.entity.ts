@@ -7,8 +7,8 @@ import {
 } from 'typeorm';
 import { OrderStatus } from '../enus/order-status.enum';
 import { RegistTableDates } from 'src/common/table-fields/register-table-dates.field';
-import { User } from 'src/users/entities/user.entity';
-import { Payment } from 'src/payments/entities/payment.entity';
+import { User } from 'src/datasets/users/entities/user.entity';
+import { Payment } from 'src/datasets/payments/entities/payment.entity';
 
 @Entity()
 export class Order {
