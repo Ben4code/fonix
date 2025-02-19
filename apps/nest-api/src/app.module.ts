@@ -6,6 +6,8 @@ import { CommonModule } from './common/common.module';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from '@nestjs/config';
 import { OrdersModule } from './orders/orders.module';
+import { PaymentsModule } from './payments/payments.module';
+import { CategoriesModule } from './categories/categories.module';
 import configurations from './config/configuration';
 
 @Module({
@@ -19,6 +21,8 @@ import configurations from './config/configuration';
     }),
     DatabaseModule,
     OrdersModule,
+    PaymentsModule,
+    CategoriesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
