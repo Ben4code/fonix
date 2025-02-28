@@ -11,6 +11,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        pale_orange: "#ffd9a6",
+        light_orange: "#fbb03b",
+        orange: "#f7931e",
+      },
+      fontFamily: {
+        sans: ["Monserrat", "sans-serif"],
+        title: ["Merriweather", "serif"],
       },
     },
   },
